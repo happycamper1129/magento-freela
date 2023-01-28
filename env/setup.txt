@@ -1,0 +1,43 @@
+/*
+Essa configuracao funciona 100%
+*/
+
+
+bin/magento setup:install \
+  --db-host=db \
+  --db-name=magento \
+  --db-user=magento \
+  --db-password=magento \
+  --base-url=https://localhost/ \
+  --base-url-secure=https://localhost/ \
+  --backend-frontname=admin00 \
+  --admin-firstname=Thiago \
+  --admin-lastname=Shimada \
+  --admin-email=thiagoshimada@gmail.com \
+  --admin-user=thiagoshimada@gmail.com \
+  --admin-password=magento123 \
+  --language=pt_BR \
+  --currency=BRL \
+  --timezone=America/Sao_Paulo \
+  --amqp-host=rabbitmq \
+  --amqp-port=5672 \
+  --amqp-user=magento \
+  --amqp-password=magento \
+  --amqp-virtualhost=/ \
+  --cache-backend=redis \
+  --cache-backend-redis-server=redis \
+  --cache-backend-redis-db=0 \
+  --page-cache=redis \
+  --page-cache-redis-server=redis \
+  --page-cache-redis-db=1 \
+  --session-save=redis \
+  --session-save-redis-host=redis \
+  --session-save-redis-log-level=4 \
+  --session-save-redis-db=2 \
+  --search-engine=elasticsearch7 \
+  --elasticsearch-host=elasticsearch \
+  --elasticsearch-port=9200 \
+  --use-rewrites=1 \
+  --no-interaction
+
+
